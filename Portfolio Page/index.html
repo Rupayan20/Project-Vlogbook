@@ -18,15 +18,204 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Dosis:wght@600&family=Finlandica&family=Nunito:wght@800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Odia:wght@500&family=Arapey&family=Arvo&family=BIZ+UDPMincho&family=Comfortaa:wght@700&family=Cormorant+Garamond:wght@500&family=Dancing+Script:wght@600&family=Fredoka+One&family=Fuzzy+Bubbles&family=Gentium+Book+Basic&family=Homemade+Apple&family=IBM+Plex+Serif:wght@500&family=Inter:wght@700&family=Josefin+Sans:wght@300&family=Licorice&family=M+PLUS+1&family=Merriweather:wght@900&family=Montserrat+Alternates:wght@600&family=Montserrat:wght@400;500&family=Nunito&family=Nunito+Sans:wght@600&family=Quicksand:wght@500&family=Raleway:wght@600;700&family=Roboto&family=Roboto+Slab:wght@400;500&family=Saira+Condensed&family=Sansita&family=Satisfy&family=Varela+Round&family=Whisper&family=Work+Sans:wght@500&display=swap"
-        rel="stylesheet">
+
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
-    <link rel="stylesheet" href="style.css">
-    
+    <style>
+        .icons ul li {
+            display: inline-block;
+            background-color: aliceblue;
+            width: 40px;
+            text-align: center;
+            padding: 5px 5px 5px 5px;
+            border-radius: 6px;
+
+        }
+
+        .icons ul {
+            word-spacing: 20px;
+        }
+
+        .icons ul li a i {
+            font-size: 25px;
+            color: whitesmoke;
+        }
+
+        .icons ul li:nth-child(1) {
+            background-color: #0165E1;
+        }
+
+        .icons ul li:nth-child(2) {
+            background-color: #0A66C2;
+        }
+
+        .icons ul li:nth-child(3) {
+            background: linear-gradient(to bottom, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #FCAF45, #FFDC80)
+        }
+
+        .icons ul li:nth-child(4) {
+            background: #2887e6;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .services .item {
+            max-width: 400px;
+            text-align: center;
+            border: #0165E1;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        .services .item {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 8px;
+            padding-right: 8px;
+            height: 350px;
+            margin: auto 8px;
+        }
+
+        .services .item .pic img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            box-shadow: 2px 2px 8px grey;
+            border-radius: 50%;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            width: 350px;
+            text-align: center;
+            margin-top: 60px;
+            padding: 10px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        .card_img {
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 100%;
+            margin: -60px auto 0;
+            box-shadow: 2px 2px 5px grey;
+            position: relative;
+            top: -2%;
+            z-index: 1;
+        }
+
+        .card_img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 5px;
+
+
+        }
+
+        .card_info {
+            padding-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        .social img {
+            width: 150px;
+        }
+
+        .background {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 95vh;
+
+            background-position: center;
+            text-align: center;
+            color: whitesmoke;
+            animation: change 25s infinite ease-in-out;
+        }
+
+        @keyframes change {
+            0% {
+                background-image: url('nature1.jpg');
+            }
+
+            20% {
+                background-image: url('pic3.jpg');
+            }
+
+            40% {
+                background-image: url('pic1.jpg');
+            }
+
+            60% {
+                background-image: url('pic2.jpg');
+            }
+
+            80% {
+                background-image: url('nature1.jpg');
+            }
+
+            100% {
+                background-image: url('pic2.jpg');
+            }
+
+        }
+        .vlogbook_contents {
+            position: relative;top: 30%;
+            padding-bottom: 20px;
+            color: whitesmoke;
+        }
+
+
+
+
+        .vlogbook_contents button {
+            padding: 5px 5px 5px 5px;
+            border: none;
+        }
+
+        .vlogbook_contents h4 {
+            font-family: 'Dosis', sans-serif;   color: whitesmoke;
+        }
+
+        .vlogbook_contents .head p {
+            font-family: 'Asap', sans-serif;   color: whitesmoke;
+            font-size: 55px;
+
+        }
+
+        .vlogbook_contents .know_us p {
+            font-family: 'Finlandica', sans-serif;   color: whitesmoke;
+            font-size: 20px;margin: auto 15%;
+        }
+
+        .vlogbook_contents .learn_more button a {
+            color: whitesmoke;
+            font-size: 25px;
+        }
+
+        .vlogbook_contents .learn_more button {
+            background-color: #3d3dc7;
+            padding: 10px 10px 10px 10px;border-radius: 5px;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -52,28 +241,23 @@
                 <div class="background">
                     <div class="vlogbook_contents ">
                         <div class="title">
-                            <h1>FOR&nbsp;<span class="auto"></span></h1>
+                            <h4>FOR TRAVELLERS / FOR VLOGGERS / FOR TOURISTS </h4>
                         </div>
-
-
-                        <div class="head ">
-                            <p>HAVE A JOYFUL VACCATION</p>
+                        <div class="head mt-4">
+                            <p>GET SET GO</p>
                         </div>
-                        <div class="head_1">
-                            <p>Have a Joyful Holiday</p>
-                        </div>
-                        <div class="know_us">
-                            <p>We promise you, you will never feel regret after joining our trip, and give you the best
-                                service.
+                        <div class="know_us mt-4">
+                            <p>Bored with busy schedule of your life?? then its a chance for you to live your life, experience
+                                the fullest level of fulest
+                                level of happiness. We promise you that you are going to live the best days of your life.
                             </p>
                         </div>
-                        <div class="learn_more mt-3">
+                        <div class="learn_more mt-4">
                             <button><a href=""><b>Explore Out</b></a></button>
                         </div>
-
+        
                     </div>
                 </div>
-
 
 
             </div>
@@ -89,14 +273,14 @@
             </div>
             <div class="services mt-5">
 
-                <div class="card mb-5">
-
+                <div class="card">
+                    
                     <div class="card_img">
-
+                        
                         <img src="assets/images/blog1.png" alt="user-image">
                     </div>
                     <div class="card_info mt-3">
-
+                        
                         <h2>SAVE MONEY</h2>
                         <p class="mt-2">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Id officiis quidem consequuntur
@@ -105,14 +289,14 @@
                     </div>
                 </div>
 
-                <div class="card mb-5">
-
+                <div class="card">
+                    
                     <div class="card_img">
-
+                        
                         <img src="assets/images/blog2.png" alt="user-image">
                     </div>
                     <div class="card_info mt-3">
-
+                       
                         <h2>MAKE MONEY</h2>
                         <p class="mt-2">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Id officiis quidem consequuntur
@@ -123,14 +307,14 @@
 
 
 
-                <div class="card mb-5">
-
+                <div class="card">
+                    
                     <div class="card_img">
-
+                        
                         <img src="assets/images/blog3.png" alt="user-image">
                     </div>
                     <div class="card_info mt-3">
-
+                        
                         <h2>SHARE EXPERIENCE</h2>
                         <p class="mt-2">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Id officiis quidem consequuntur
@@ -141,117 +325,91 @@
 
             </div>
     </section>
-
-    <div class="newsletter">
-        <div class="contents">
-            <h2>Join out newsletter to receive the latest updates and promotions.</h2>
-        </div>
-        <div class="inputs mt-5 mb-5">
-            <div class="mail mb-3"><input type="email" placeholder="Enter your Email" /></div>
-            &nbsp;&nbsp;<div class="subscribe"><button><b>SUBSCRIBE</b></button></div>
-
-        </div>
-    </div>
     <!-- footers 20 -->
-    <section id="footer" class="footer">
-        <div class="heading ">
-            <p><b>Lets Catch Up</b></p>
-            <h2><strong>Feel Free To Contact Us</strong></h2>
-        </div>
-        <div class="contents  mb-5 mt-5">
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0857225706663!2d88.42519331479211!3d22.575896985181164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02751a9d9c9e85%3A0x7fe665c781b10383!2sTechno%20Main%20Salt%20Lake!5e0!3m2!1sen!2sin!4v1658470294800!5m2!1sen!2sin"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="feedback mt-5">
-                <h5><strong>FeedBack Form</strong></h5>
-                <p>Post your queries, solve your doubts and get to know</p>
-                <p> more about us</p>
-                <form>
-                    <p>Name</p>
-                    <input type="text" />
-                    <p class="mt-2">Email</p>
-                    <input type="email" />
-                    <p class="mt-2">Message</p>
-                    <textarea></textarea>
-                    <h1></h1>
-                    <input class="mt-2" type="submit" value="SUBMIT" />
-                    <p class="mt-2">We wiil try to reply your message as soon as possible</p>
+    <section class="w3l-footers-20">
+        <div class="footers20">
+            <div class="container">
+                <div class="footers20-content">
+                    <div class="d-grid grid-col-4 grids-content">
+                        <div class="column">
+                            <h4>Company</h4>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">About Us</font>
+                            </p>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">Contact Us </font>
+                            </p>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">Awards & Recognition</font>
+                            </p>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <h4>Privacy</h4>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">Terms of Use</font>
+                            </p>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">Privacy And Policy</font>
+                            </p>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">Be Safe Online</font>
+                            </p>
 
 
-                </form>
-            </div>
-        </div>
-        <div class="contact  ">
-            <div class="logo mb-5">
-                <img src="logo.png" />
 
-            </div>
-            <div class="terms">
-                <div class="company mb-5">
-                    <h5><b>COMPANY</b></h5>
+                        </div>
+                        <div class="column">
+                            <h4>Need Help?</h4>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">Member Login</font>
+                            </p>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">How to Use Site</font>
+                            </p>
+                            <p class="contact-para3">
+                                <font color="#FFFFFF">Suggestions and Complaints</font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-grid grid-col-3 grids-content1 bottom-border">
+                        <div class="columns copyright-grid align-self">
+                            <p class="copy-footer-29">
+                            <div class="icons mb-4">
+                                <ul>
+                                    <li><a href=""><i class="zmdi zmdi-facebook"></i></a></li>
+                                    <li><a href=""><i class="zmdi zmdi-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="zmdi zmdi-twitter"></i></a></li>
+                                </ul>
+                            </div>
 
-                    <p>About Us</p>
-                    <p>Contact Us</p>
-                    <p>Awards & Recognition</p>
+                            </p>
+                        </div>
+                        <div class="columns text-lg-right social-grid">
+                            <ul class="social">
+                                <p style="font-size: 25px;color: whitesmoke;">
+                                    Get the Pocket Guide App </p>
+                                <br>
+                                <img src="app_store.png" />&nbsp;&nbsp;&nbsp;<img src="play_store.png" />
+
+                            </ul>
+                        </div>
+                        <div class="footer">
+                            <font color="#FFFFFF">© 2022- Tour.com. India’s Leading Travel Service<br></font>
+                        </div>
+                    </div>
                 </div>
-                <div class="privacy mb-5">
-                    <h5><b>PRIVACY</b></h5>
-
-                    <p>Terms of service </p>
-                    <p>Be Safe Online</p>
-                    <p>Privacy & Recognition</p>
-                </div>
-
-                <div class="help mb-5">
-                    <h5><b>NEED HELP?</b></h5>
-
-                    <p>Member Login</p>
-                    <p>How to Use Site</p>
-                    <p>Awards & Suggestion</p>
-                </div>
-
-
-
             </div>
         </div>
-        </div>
-        <hr />
-        <div class="platforms mt-5">
-            <div class="icons mb-4">
-                <ul>
-                    <li><a href=""><i class="zmdi zmdi-facebook"></i></a></li>
-                    <li><a href=""><i class="zmdi zmdi-linkedin"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                    <li><a href=""><i class="zmdi zmdi-twitter"></i></a></li>
-                </ul>
-                <br />
-                <p>Get in touch with our social media platforms</p>
-            </div>
-            <ul class="social mb-5">
-
-
-                <img src="app_store.png" />&nbsp;&nbsp;&nbsp;<img src="play_store.png" />
-
-
-            </ul>
-        </div>
-        <div class="copyright">
-            © 2022- Tour.com. India’s Leading Travel Service
-        </div>
+        <!-- move top -->
+        <button onClick="topFunction()" id="movetop" title="Go to top">
+            &#10548;
+        </button>
+      
+        <!-- /move top -->
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
 
-        var typed = new Typed(" .auto", {
-            strings: ["TRAVELLERS", " VLOGGERS", "TOURISTS"],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-        })
-    </script>
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
 
@@ -297,7 +455,7 @@
     <!-- //script -->
 
     <!-- script for tesimonials carousel slider -->
-
+    
     <!-- //script for tesimonials carousel slider -->
 
     <script>
