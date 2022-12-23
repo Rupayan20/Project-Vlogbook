@@ -1,0 +1,312 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #b4cffe;
+}
+
+input[type="text"]{
+    border: 0;
+    outline: none;
+}
+
+body h3{
+    position: absolute;
+    margin: 0;
+    top: 15%;
+    left: 15%;
+}
+
+#heading{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    height: 55px;
+    z-index: 1;
+    background-color: beige;
+
+}
+
+#logo{
+    position: absolute;
+    top: 5.5px;
+    display: inline;
+    left: 15%;
+}
+
+#logo img{
+    width:43px;
+    height:43px;
+}
+
+.links{
+    position: absolute;
+    display: inline;
+    right: 15%;
+}
+
+ul{
+    display: flex;
+    margin-top: 15px;
+}
+
+li{
+    list-style: none;
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.liLink:hover{
+    color: #5392f9;
+    transition: all .2s ease;
+}
+
+
+.liLink{
+    text-decoration: none;
+    color: rgba(0,0,0,.75);
+}
+
+
+/**Booking section**/
+
+#hotelBooking{
+    background-color: white;
+    border-radius: 5%;
+    height: 391px;
+    margin-left: 12%;
+    position: relative;
+    top:10%;
+    width: 39%;
+}
+
+#insideContainer{
+    padding-top: 15px;
+    margin: 15px;
+    height: 100%;
+}
+
+#bookingSec{
+    margin-top: 10px;
+}
+
+.book{
+    display: inline;
+    margin-left: 20px;
+}
+
+.radioBtn:checked + h4{
+    color: blue;
+}
+
+h4{
+    display: inline;
+}
+/**where section**/
+#placeContainer{
+    height: 72.28px;
+    position: relative;
+    top: 20px;
+}
+
+#placeContainer span{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+#placeContainer img{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    margin-left: 10px;
+    top: 60%;
+    z-index: 1;
+}
+
+#placeContainer input{
+    font-size: 15px;
+    height: 34px;
+    padding-left: 35px ;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+
+#placeContainer hr{
+    position: absolute;
+    margin: 0;
+    top: 100%;
+    width: 100%
+}
+
+/**Date Selection**/
+#dateSelect{
+    height: 82.28px;
+    margin-top: 35px;
+    position: relative;
+}
+
+
+#checkInP{
+    display: inline;
+    margin-left: 10px;
+    position: absolute;
+    width: 50%;
+    top: 10%;
+}
+
+#checkInText{
+    font-size: 23px;
+    font-weight: 500;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    width: 43%;
+}
+
+#hrLine{
+    border: 0.5px solid black;
+    display: inline;
+    height: 60%;
+    opacity: 0.3;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    
+}
+
+#checkOutP{
+    display: inline;
+    margin-left: 30px;
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    left: 50%;
+}
+
+#checkOutText{
+    font-size: 23px;
+    font-weight: 500;
+    margin-left: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45%;
+}
+
+
+#totalDay{
+    background-color: rgb(232, 243, 255);
+    border-radius: 1.2rem;
+    font-size: 10px;
+    display: inline;
+    position: absolute;
+    left: 39.5%;
+    top: 34%;
+    z-index: 1;
+    padding: 0.3rem 0.9rem;
+    text-align: center;
+}
+
+
+#dateSelect hr{
+    position: absolute;
+    margin: 0;
+    top: 100px;
+    width: 100%
+}
+
+/**Room Select**/
+#roomSelect{
+    height: 72.28px;
+    position: relative;
+    margin-top: 35px;
+}
+
+#roomSelect span{
+    margin-left: 10px;
+}
+
+#roomSelect div{ 
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+}
+
+#adult, #child, #room{
+    border: 0;
+    outline: none;
+    background-color: rgb(232, 243, 255);
+}
+
+#roomSelect hr{
+    position: absolute;
+    margin: 0;
+    top: 100%;
+    width: 100%
+}
+
+#hotelBooking button{
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    box-shadow: rgb(0 0 0 / 13%) 0px 0.2rem 1.2rem 0px;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3rem;
+    width: 13rem;
+
+    border: none;
+    background-color: rgb(255, 109, 56);
+    color: rgb(255, 255, 255);
+}
+/**resposive**/
+
+@media screen and (max-width: 950px){
+    #bgImg{
+        display: none;
+    }
+    #hotelBooking{
+    margin-left: 0;
+    transition: 0.2s ease-in;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 800px) {
+    .links{
+        position: absolute;
+        display: inline;
+        right: 3%;
+        transition: 0.2s ease-in;
+    }
+
+    #logo{
+        left: 5%;
+        transition: 0.2s ease-in;
+    }
+}
+
+@media screen and (max-width: 741px) {
+
+    li{
+        margin-left: 13px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    li{
+        margin-left: 13px;
+        font-size: 14px;
+        font-weight: 700;
+        right: 2%;
+    }
+}
