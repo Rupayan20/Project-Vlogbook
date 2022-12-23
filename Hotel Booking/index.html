@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Hotel Booking</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto&display=swap" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="css/pikaday.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!--header-->
+        <div id="heading">
+            <div id="logo">
+            <a href="sec1.html"><img src="images/logo.jpg"></a>
+            </div>
+
+        <div class="links">
+        <ul>
+            <li class="listing"><a href="" class="liLink">Rooms</a></li>
+            <li class="listing"><a href="" class="liLink">Flights</a></li>
+            <li class="listing"><a href="" class="liLink">Trains</a></li>
+            <li class="listing"><a href="" class="liLink">Buses</a></li>
+            <li class="listing"><a href="" class="liLink">Restaurants</a></li>
+            <li class="listing"><a href="" class="liLink">Today's deals</a></li>
+        </ul>
+        </div>
+        </div>
+        <img src="images/bg img.jpg" id="bgImg"style="position:absolute; left:50%; height: 83.6%; width: 48.8%;">
+        <h3>Book Hotel & Homestays</h3>
+       
+        <div id="hotelBooking">
+            <div id="insideContainer">
+            <div id="bookingSec">
+                <div class="book">
+                <input type="radio" id="radioInd" class="radioBtn" name="countryOption" checked="checked">
+                <h4>India</h4>
+                </div>
+                <div class="book">
+                <input type="radio" id="radioInt" class="radioBtn" name="countryOption">
+                <h4>International</h4>
+                </div>
+            </div>
+
+            <div id="placeContainer">
+                <span>Where</span>
+                <img src="images/search img.png">
+                <input type="text" placeholder="e.g. - Area, Landmark or Property Name">
+                <hr>
+            </div>
+
+            <div id="dateSelect">
+                    <p id="checkInP">Check-in</p>
+                    <input type="text" id="checkInText" readonly>
+                
+                <div id="hrLine"></div>
+                <div id="totalDay">1 Nights</div>
+                
+                    <p id="checkOutP">Check-out</p>
+                    <input id="checkOutText" type="text" readonly>
+                    <hr>
+            </div>
+
+            <div id="roomSelect">
+                <span>Guests and Rooms</span>
+                <div>
+                <select name="Adult" id="adult">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> Adults |
+                <select name="Child" id="child">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> Children | 
+                <select name="Room" id="room">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> Rooms
+                </div>
+                <hr>
+            </div>
+            <button type="submit" class="btn btn-primary">SEARCH</button>
+            </div>
+        </div>
+        <p style="position:absolute; top:95%; left: 45%; font-size: 13px;">Image Courtsey <a href="https://dribbble.com/shots/11107873-Interstellar-Hotel?utm_source=Clipboard_Shot&utm_campaign=shortobanco&utm_content=Interstellar%20Hotel&utm_medium=Social_Share" style="color: #3c4454">Adriana Portobanco</a></p>
+        <script src="node_modules/moment/moment.js"></script>
+        <script src="pikaday.js"></script> 
+        <script src="index.js"></script>
+    </body>
+</html>
