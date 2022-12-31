@@ -1,0 +1,110 @@
+.footer{
+    height:100%;
+    background-color:black;
+    position: relative;
+}
+
+.footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer .footer-container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+.footer .footer-container h2{
+    color: white;
+
+}
+.footer .footer-container p{
+    color: white;
+
+}
+
+.footer .newsletter .form-element{
+    background: white;
+    display: inline-block;
+}
+.footer .footer-container .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    width: 74%;
+}
+
+.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+.social{
+    color: white;
+}
+.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+.footer .follow div i{
+    color: white;
+    padding: 0 .4rem;
+}
+.footer .rights{
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer .rights h4 a{
+    color: white;
+}
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media only screen and (max-width: 750px){
+    
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 520px){
+    
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    
+
+}
