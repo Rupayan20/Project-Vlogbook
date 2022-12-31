@@ -1,0 +1,33 @@
+.main {
+  max-width: 90%;
+    margin: auto;
+}
+
+.about-content {
+  background-color: white;
+  padding: 10px;
+}
+
+.about-contenth2 {
+  color: #656565;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+  margin-right: 200px;
+  /* margin: auto; */
+}
+.co {
+  margin-top: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .column {
+    width: 100%;
+  }
+}
